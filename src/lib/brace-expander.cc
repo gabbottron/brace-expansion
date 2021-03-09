@@ -118,7 +118,7 @@ void BraceExpandr::validateStatement(std::string s) {
   }
 }
 
-
+// combine two lists of strings and return them
 std::vector<std::string> BraceExpandr::combine(std::vector<std::string> left, std::vector<std::string> right) {
   std::vector<std::string> result;
 
@@ -203,6 +203,7 @@ std::vector<std::string> BraceExpandr::parseComponentPart() {
   return result;
 }
 
+// returns the final expanded string
 std::string BraceExpandr::getExpandedStatement() {
   std::string final_result;
   
